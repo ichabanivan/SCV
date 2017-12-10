@@ -1,0 +1,118 @@
+/**
+ * You main style file
+ */
+
+@import "_vars.scss";
+@import "_mixins.scss";
+@import "sprite.css";
+@import "_fonts.scss";
+
+* {
+
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+
+    box-sizing: border-box;
+  }
+
+  &::-webkit-input-placeholder,
+  &:-moz-placeholder,
+  &::-moz-placeholder,
+  &:-ms-input-placeholder {
+
+    color: #ccc;
+  }
+}
+
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+  background: linear-gradient(to right, #25c481, #25b7c4);
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+h1, h2, h3{
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+  display: block;
+}
+table{
+  width:100%;
+  table-layout: fixed;
+}
+thead {
+  background-color: rgba(255,255,255,0.3);
+}
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+textarea {
+  margin: auto;
+  display: block;
+  padding: 20px;
+  background: rgba(255,255,255,0.8);
+  overflow: hidden;
+  margin: 30px *;
+  line-height: 1.5;
+  width: 80%;
+  height: 300px;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+
+button {
+  background: rgba(255,255,255,0.3);
+  color: #fff;
+  border: none;
+  padding: 40px;
+  margin: auto;
+  text-align: center;
+}
